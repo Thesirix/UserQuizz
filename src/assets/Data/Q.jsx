@@ -18,3 +18,7 @@
         choices: ['var', 'let', 'var and let', 'None of the above'],
         type: 'MCQs',
         correctAnswer: 'var and let',
+      },
+      {
+        question:
+          'Which of the following methods can be used to display data in some form using Javascript?',
