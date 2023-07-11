@@ -14,3 +14,7 @@
         correctAnswer: 'stringify()',
       },
       {
+        question: 'Which of the following keywords is used to define a variable in Javascript?',
+        choices: ['var', 'let', 'var and let', 'None of the above'],
+        type: 'MCQs',
+        correctAnswer: 'var and let',
