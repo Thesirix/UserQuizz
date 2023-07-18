@@ -26,3 +26,7 @@
         type: 'MCQs',
         correctAnswer: 'All of the above',
       },
+      {
+        question: 'How can a datatype be declared to be a constant type?',
+        choices: ['const', 'var', 'let', 'constant'],
+        type: 'MCQs',
