@@ -10,3 +10,7 @@ const Quiz = () => {
       score: 0,
       correctAnswers: 0,
       wrongAnswers: 0,
+    });
+    const [timer, setTimer] = useState(10);
+    const [responseTime, setResponseTime] = useState(null); // Variable pour stocker le temps de réponse
+
