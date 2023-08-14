@@ -19,3 +19,8 @@ const Quiz = () => {
 
     useEffect(() => {
        
+        if (!showResult) {
+          const interval = setInterval(() => {
+            setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
+          }, 1000);
+      
