@@ -14,3 +14,8 @@ const Quiz = () => {
     const [timer, setTimer] = useState(10);
     const [responseTime, setResponseTime] = useState(null); // Variable pour stocker le temps de réponse
 
+    const { questions } = quiz;
+    const { question, choices, correctAnswer } = questions[activeQuestion];
+
+    useEffect(() => {
+       
