@@ -24,3 +24,7 @@ const Quiz = () => {
             setTimer((prevTimer) => (prevTimer > 0 ? prevTimer - 1 : 0));
           }, 1000);
       
+          return () => clearInterval(interval);
+        }
+      }, [activeQuestion, timer, showResult]); 
+      
