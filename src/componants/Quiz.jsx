@@ -32,3 +32,7 @@ const Quiz = () => {
       const onClickNext = () => {
         setSelectedAnswerIndex(null);
         setResult((prev) => {
+          if (selectedAnswer) {
+            // Calculer les points en fonction du temps de réponse
+            const points = calculatePoints(responseTime);
+            return {
