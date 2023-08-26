@@ -28,3 +28,7 @@ const Quiz = () => {
         }
       }, [activeQuestion, timer, showResult]); 
       
+
+      const onClickNext = () => {
+        setSelectedAnswerIndex(null);
+        setResult((prev) => {
