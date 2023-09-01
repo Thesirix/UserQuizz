@@ -36,3 +36,7 @@ const Quiz = () => {
             // Calculer les points en fonction du temps de réponse
             const points = calculatePoints(responseTime);
             return {
+              ...prev,
+              score: prev.score + points,
+              correctAnswers: prev.correctAnswers + 1,
+            };
