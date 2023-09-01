@@ -40,3 +40,7 @@ const Quiz = () => {
               score: prev.score + points,
               correctAnswers: prev.correctAnswers + 1,
             };
+          } else {
+            return {
+              ...prev,
+              wrongAnswers: prev.wrongAnswers + 1
