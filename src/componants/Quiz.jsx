@@ -44,3 +44,7 @@ const Quiz = () => {
             return {
               ...prev,
               wrongAnswers: prev.wrongAnswers + 1
+            };
+          }
+        });
+        if (activeQuestion !== questions.length - 1) {
