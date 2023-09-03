@@ -48,3 +48,7 @@ const Quiz = () => {
           }
         });
         if (activeQuestion !== questions.length - 1) {
+          setActiveQuestion((prev) => prev + 1);
+          setTimer(10); 
+          setResponseTime(null); // Réinitialiser le temps de réponse
+        } else {
