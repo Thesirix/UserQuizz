@@ -57,3 +57,7 @@ const Quiz = () => {
         }
       };
 
+    const onAnswerSelected = (answer, index) => {
+      setSelectedAnswerIndex(index);
+      if (answer === correctAnswer) {
+        setSelectedAnswer(true);
