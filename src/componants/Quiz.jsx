@@ -52,3 +52,8 @@ const Quiz = () => {
           setTimer(10); 
           setResponseTime(null); // Réinitialiser le temps de réponse
         } else {
+          setActiveQuestion(0);
+          setShowResult(true);
+        }
+      };
+
