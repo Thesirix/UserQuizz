@@ -65,3 +65,7 @@ const Quiz = () => {
         setSelectedAnswer(false);
       }
       // Enregistrer le temps de réponse lorsque l'utilisateur clique sur une réponse
+      setResponseTime(10 - timer);
+    };
+
+    const handleSkip = () => {
