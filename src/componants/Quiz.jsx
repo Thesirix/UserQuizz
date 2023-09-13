@@ -61,3 +61,7 @@ const Quiz = () => {
       setSelectedAnswerIndex(index);
       if (answer === correctAnswer) {
         setSelectedAnswer(true);
+      } else {
+        setSelectedAnswer(false);
+      }
+      // Enregistrer le temps de réponse lorsque l'utilisateur clique sur une réponse
