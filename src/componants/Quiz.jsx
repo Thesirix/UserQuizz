@@ -73,3 +73,9 @@ const Quiz = () => {
         setActiveQuestion((prev) => prev + 1);
         setTimer(10); 
         setResponseTime(null); // Réinitialiser le temps de réponse
+      } else {
+        setActiveQuestion(0);
+        setShowResult(true);
+      }
+    };
+
