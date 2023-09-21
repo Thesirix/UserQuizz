@@ -79,3 +79,9 @@ const Quiz = () => {
       }
     };
 
+    const calculatePoints = (responseTime) => {
+      // Calculer les points en fonction du temps de réponse
+      const points = 11 - responseTime; // 1 seconde vaut 1 point, donc si le temps de réponse est de 0, l'utilisateur obtiendra 11 points
+      return Math.max(1, points); // Assurez-vous que l'utilisateur obtient au moins 1 point même s'il répond après les 10 secondes
+    };
+
