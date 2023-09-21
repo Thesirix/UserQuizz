@@ -85,3 +85,7 @@ const Quiz = () => {
       return Math.max(1, points); // Assurez-vous que l'utilisateur obtient au moins 1 point même s'il répond après les 10 secondes
     };
 
+    const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
+
+    return (
+        <div className="quiz-container">
