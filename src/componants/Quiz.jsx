@@ -89,3 +89,7 @@ const Quiz = () => {
 
     return (
         <div className="quiz-container">
+          {!showResult ? (
+            <div>
+              <div className='leftnum'>
+                <span className="active-question-no">{addLeadingZero(activeQuestion + 1)}</span>
