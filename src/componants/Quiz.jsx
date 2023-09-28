@@ -93,3 +93,7 @@ const Quiz = () => {
             <div>
               <div className='leftnum'>
                 <span className="active-question-no">{addLeadingZero(activeQuestion + 1)}</span>
+                <span className="total-question">/{addLeadingZero(questions.length)}</span>
+              </div>
+              <h2>{question}</h2>
+      
