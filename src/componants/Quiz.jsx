@@ -97,3 +97,7 @@ const Quiz = () => {
               </div>
               <h2>{question}</h2>
       
+              <ul>
+                {choices.map((answer, index) => (
+                  <li
+                    onClick={() => onAnswerSelected(answer, index)}
