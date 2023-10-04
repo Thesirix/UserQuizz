@@ -105,3 +105,7 @@ const Quiz = () => {
                     className={selectedAnswerIndex === index ? 'selected-answer' : null}>
                     {answer}
                   </li>
+                ))}
+              </ul>
+              <div className="flex-right">
+                <button onClick={handleSkip} className="skip">
