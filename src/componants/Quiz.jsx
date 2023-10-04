@@ -101,3 +101,7 @@ const Quiz = () => {
                 {choices.map((answer, index) => (
                   <li
                     onClick={() => onAnswerSelected(answer, index)}
+                    key={answer}
+                    className={selectedAnswerIndex === index ? 'selected-answer' : null}>
+                    {answer}
+                  </li>
