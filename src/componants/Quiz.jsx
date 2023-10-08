@@ -114,3 +114,7 @@ const Quiz = () => {
                   {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
                 </button>
 
+              </div>
+            </div>
+          ) : (
+            <div className="result">
