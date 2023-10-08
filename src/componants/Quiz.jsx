@@ -109,3 +109,8 @@ const Quiz = () => {
               </ul>
               <div className="flex-right">
                 <button onClick={handleSkip} className="skip">
+                    Skip</button>
+                <button onClick={onClickNext} className="next" disabled={selectedAnswerIndex === null}>
+                  {activeQuestion === questions.length - 1 ? 'Finish' : 'Next'}
+                </button>
+
