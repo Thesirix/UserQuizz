@@ -118,3 +118,7 @@ const Quiz = () => {
             </div>
           ) : (
             <div className="result">
+              <h3>Result</h3>
+              <p>
+                Total Question: <span>{questions.length}</span>
+              </p>
