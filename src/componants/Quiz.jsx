@@ -122,3 +122,7 @@ const Quiz = () => {
               <p>
                 Total Question: <span>{questions.length}</span>
               </p>
+              <p>
+                Total Score:<span> {result.score}</span>
+              </p>
+              <p>
