@@ -130,3 +130,7 @@ const Quiz = () => {
               </p>
               <p>
                 Wrong Answers:<span> {result.wrongAnswers}</span>
+              </p>
+            </div>
+          )}
+      
