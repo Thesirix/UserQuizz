@@ -134,3 +134,7 @@ const Quiz = () => {
             </div>
           )}
       
+          {!showResult && (
+            <div className="stopwatch-container">
+              <div className="stopwatch-content">
+                <div className="stopwatch-icon">
