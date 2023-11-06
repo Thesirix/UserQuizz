@@ -142,3 +142,9 @@ const Quiz = () => {
                 </div>
                 <span className="timer">{timer} seconds</span>
               </div>
+            </div>
+          )}
+        </div>
+      );
+};
+
