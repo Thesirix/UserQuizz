@@ -138,3 +138,7 @@ const Quiz = () => {
             <div className="stopwatch-container">
               <div className="stopwatch-content">
                 <div className="stopwatch-icon">
+                  <i className="fa-solid fa-stopwatch"> :</i>
+                </div>
+                <span className="timer">{timer} seconds</span>
+              </div>
