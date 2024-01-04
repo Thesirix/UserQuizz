@@ -10,3 +10,7 @@
     background: linear-gradient(
         217deg,
         rgba(219, 109, 109, 0.8),
+        rgb(255 0 0 / 0%) 70.71%
+      ), linear-gradient(127deg, rgba(233, 157, 59, 0.8), rgb(0 255 0 / 0%) 70.71%),
+      linear-gradient(336deg, rgba(73, 236, 100, 0.8), rgb(0 0 255 / 0%) 70.71%);
+  border-radius: 9px;
