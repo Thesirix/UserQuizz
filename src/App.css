@@ -87,3 +87,8 @@
   color: #888;
 }
 
+.quiz-container ul .selected-answer {
+    background: #17c94d;
+    border: 1px solid #800080;
+  }
+
