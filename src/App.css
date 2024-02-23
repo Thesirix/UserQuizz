@@ -118,3 +118,7 @@ body {
   padding: 30px 60px;
  
   align-items: center;
+  position: relative;
+  justify-content: flex-end;
+}
+
