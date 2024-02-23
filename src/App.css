@@ -122,3 +122,9 @@ body {
   justify-content: flex-end;
 }
 
+.quiz-container .active-question-no {
+  font-size: 32px;
+  font-weight: 500;
+  color: #800080;
+}
+
