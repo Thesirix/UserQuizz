@@ -128,3 +128,9 @@ body {
   color: #800080;
 }
 
+.quiz-container .total-question {
+  font-size: 16px;
+  font-weight: 500;
+  color: #e0dee3;
+}
+
