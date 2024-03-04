@@ -145,3 +145,7 @@ body {
   margin-left: -40px;
 }
 
+.quiz-container ul li {
+  text-decoration: none;
+  list-style: none;
+  color: #2d264b;
