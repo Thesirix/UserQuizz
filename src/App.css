@@ -158,3 +158,8 @@ body {
   cursor: pointer;
 }
 
+.quiz-container ul .selected-answer {
+  background: #b3a8f5;
+  border: 1px solid #1a247e;
+}
+
