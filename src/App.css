@@ -163,3 +163,7 @@ body {
   border: 1px solid #1a247e;
 }
 
+.next {
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 0 / 80%),
