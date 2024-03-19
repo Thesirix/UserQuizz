@@ -167,3 +167,7 @@ body {
     background: linear-gradient(
         217deg,
         rgb(255 0 0 / 80%),
+        rgb(255 0 0 / 0%) 70.71%
+      ), linear-gradient(127deg, rgba(142, 135, 240, 0.8), rgb(0 255 0 / 0%) 70.71%),
+      linear-gradient(336deg, rgb(0 0 255 / 80%), rgb(0 0 255 / 0%) 70.71%);
+  border-radius: 9px;
