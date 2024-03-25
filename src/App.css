@@ -175,3 +175,8 @@ body {
   color: #ffffff;
   padding: 10px 42px;
   outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
