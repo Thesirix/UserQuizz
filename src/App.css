@@ -186,3 +186,8 @@ body {
   cursor: not-allowed;
 }
 
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
