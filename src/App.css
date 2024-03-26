@@ -191,3 +191,9 @@ body {
   justify-content: flex-end;
 }
 
+.result h3 {
+  font-size: 24px;
+  letter-spacing: 1.4px;
+  text-align: center;
+}
+
