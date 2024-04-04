@@ -202,3 +202,8 @@ body {
   font-weight: 500;
 }
 
+.result p span {
+  color: #800080;
+  font-size: 22px;
+}
+
