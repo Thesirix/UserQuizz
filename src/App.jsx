@@ -5,3 +5,6 @@ import './App.css'
 import Quiz from './componants/Quiz'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+function App() {
+ 
+
