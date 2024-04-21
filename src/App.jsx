@@ -11,3 +11,7 @@ function App() {
   return (
     <>
 <Quiz/>
+    </>
+  )
+}
+
