@@ -12,7 +12,7 @@ const Quiz = () => {
       wrongAnswers: 0,
     });
     const [timer, setTimer] = useState(10);
-    const [responseTime, setResponseTime] = useState(null); // Variable pour stocker le temps de réponse
+    const [responseTime, setResponseTime] = useState(null); 
 
     const { questions } = quiz;
     const { question, choices, correctAnswer } = questions[activeQuestion];
@@ -33,7 +33,7 @@ const Quiz = () => {
         setSelectedAnswerIndex(null);
         setResult((prev) => {
           if (selectedAnswer) {
-            // Calculer les points en fonction du temps de réponse
+           
             const points = calculatePoints(responseTime);
             return {
               ...prev,
@@ -50,7 +50,7 @@ const Quiz = () => {
         if (activeQuestion !== questions.length - 1) {
           setActiveQuestion((prev) => prev + 1);
           setTimer(10); 
-          setResponseTime(null); // Réinitialiser le temps de réponse
+          setResponseTime(null); 
         } else {
           setActiveQuestion(0);
           setShowResult(true);
@@ -64,7 +64,7 @@ const Quiz = () => {
       } else {
         setSelectedAnswer(false);
       }
-      // Enregistrer le temps de réponse lorsque l'utilisateur clique sur une réponse
+     
       setResponseTime(10 - timer);
     };
 
@@ -72,7 +72,7 @@ const Quiz = () => {
       if (activeQuestion !== questions.length - 1) {
         setActiveQuestion((prev) => prev + 1);
         setTimer(10); 
-        setResponseTime(null); // Réinitialiser le temps de réponse
+        setResponseTime(null); 
       } else {
         setActiveQuestion(0);
         setShowResult(true);
@@ -80,9 +80,9 @@ const Quiz = () => {
     };
 
     const calculatePoints = (responseTime) => {
-      // Calculer les points en fonction du temps de réponse
-      const points = 11 - responseTime; // 1 seconde vaut 1 point, donc si le temps de réponse est de 0, l'utilisateur obtiendra 11 points
-      return Math.max(1, points); // Assurez-vous que l'utilisateur obtient au moins 1 point même s'il répond après les 10 secondes
+     
+      const points = 11 - responseTime; 
+      return Math.max(1, points); 
     };
 
     const addLeadingZero = (number) => (number > 9 ? number : `0${number}`);
