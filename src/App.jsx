@@ -1,5 +1,5 @@
 import "./App.css";
-import Quiz from "./componants/Quiz";
+import QuizTest from "./componants/QuizTest/QuizTest";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Login from "./componants/Login";
 
@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Login />
-      <Quiz />
+      <QuizTest />
     </>
   );
 }
