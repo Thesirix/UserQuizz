@@ -1,13 +1,34 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios'; 
 
 export default function QuizTest() {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [token, setToken] = useState("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsInJvbGUiOiJhZG1pbiIsImlhdCI6MTcxNTI1Njc0OSwiZXhwIjoxNzE1MjYwMzQ5fQ.TS-SZnISn1YgZihohALfqxBrTepgW1wVWHXt3TMqrDg");
+  const [token, setToken] = useState("");
+
+  // Fonction pour obtenir le token dynamiquement
+  useEffect(() => {
+    async function fetchToken() {
+      try {
+        const response = await axios.post('http://localhost:3000/api/auth/login', {
+          email: "superuser@gmail.com",
+          password: "Merci2024/*"
+        });
+        setToken(response.data.token);  // Mise à jour du token
+      } catch (error) {
+        console.error("Error getting token:", error);
+        setError("Failed to get token");
+      }
+    }
+
+    fetchToken();
+  }, []);
 
   useEffect(() => {
     async function getAllQuestions() {
+      if (!token) return;  // Ne pas exécuter si le token n'est pas encore prêt
+
       setLoading(true);
       try {
         const response = await fetch(
@@ -34,7 +55,7 @@ export default function QuizTest() {
     }
 
     getAllQuestions();
-  }, [token]); // Ajout de 'token' dans les dépendances si son changement doit re-déclencher l'effet
+  }, [token]); // Effectue le fetch des questions quand le token change
 
   return (
     <div>
