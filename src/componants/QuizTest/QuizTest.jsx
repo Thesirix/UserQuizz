@@ -2,17 +2,17 @@ import React, { useState, useEffect } from "react";
 import axios from 'axios';
 
 export default function QuizTest() {
-  const [questions, setQuestions] = useState([]);  // To hold questions from the database
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // Track the current question
-  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null); // Index of the selected answer
-  const [score, setScore] = useState(0); // Score
-  const [showScore, setShowScore] = useState(false); // Boolean to show score at the end
-  const [loading, setLoading] = useState(true); // Loading state
-  const [error, setError] = useState(null); // Error state
-  const [token, setToken] = useState(""); // Token for auth
-  const [timer, setTimer] = useState(0); // Timer state for stopwatch feature
+  const [questions, setQuestions] = useState([]);  
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); 
+  const [selectedAnswerIndex, setSelectedAnswerIndex] = useState(null); 
+  const [score, setScore] = useState(0); 
+  const [showScore, setShowScore] = useState(false); 
+  const [loading, setLoading] = useState(true); 
+  const [error, setError] = useState(null); 
+  const [token, setToken] = useState(""); 
+  const [timer, setTimer] = useState(0); 
 
-  // Fetch token on component mount
+  
   useEffect(() => {
     async function fetchToken() {
       try {
@@ -20,7 +20,7 @@ export default function QuizTest() {
           email: "superuser@gmail.com",
           password: "Merci2024/*"
         });
-        setToken(response.data.token);  // Set the auth token
+        setToken(response.data.token); 
       } catch (error) {
         console.error("Error fetching token:", error);
         setError(error);
@@ -29,7 +29,7 @@ export default function QuizTest() {
     fetchToken();
   }, []);
 
-  // Fetch questions from the database once the token is available
+  // Fetch questions from  database une fois le token valide
   useEffect(() => {
     async function fetchQuestions() {
       if (!token) return;
@@ -37,7 +37,7 @@ export default function QuizTest() {
         const response = await axios.get('http://localhost:3000/api/questions/category/1', {
           headers: { Authorization: `Bearer ${token}` }
         });
-        setQuestions(response.data);  // Set questions from the database
+        setQuestions(response.data);  
         setLoading(false);
       } catch (error) {
         console.error("Error fetching questions:", error);
@@ -48,41 +48,40 @@ export default function QuizTest() {
     fetchQuestions();
   }, [token]);
 
-  // Function to handle the answer button click
+ 
   const onAnswerSelected = (answer, index) => {
-    if (selectedAnswerIndex === index) return; // If same answer selected again, do nothing
-    setSelectedAnswerIndex(index); // Set the currently selected answer index
+    if (selectedAnswerIndex === index) return; 
+    setSelectedAnswerIndex(index); 
     if (answer.is_correct) {
-      setScore(score + 1); // Increase score if the answer is correct
-    }
+      setScore(score + 1);
   };
 
-  // Skip to the next question
+ 
   const handleSkip = () => {
     const nextQuestion = currentQuestionIndex + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestionIndex(nextQuestion);
-      setSelectedAnswerIndex(null); // Reset the selected answer index
+      setSelectedAnswerIndex(null); 
     } else {
-      setShowScore(true); // End of questions
+      setShowScore(true); 
     }
   };
 
-  // Go to the next question or finish the quiz
+  
   const onClickNext = () => {
     const nextQuestion = currentQuestionIndex + 1;
     if (nextQuestion < questions.length) {
       setCurrentQuestionIndex(nextQuestion);
-      setSelectedAnswerIndex(null); // Reset the selected answer index
+      setSelectedAnswerIndex(null); 
     } else {
-      setShowScore(true); // End of questions
+      setShowScore(true); 
     }
   };
 
-  // Helper to add leading zero for formatting
+  
   const addLeadingZero = (num) => num.toString().padStart(2, '0');
 
-  // Compute the result object for the final score display
+ 
   const result = {
     score,
     correctAnswers: score,
@@ -160,4 +159,5 @@ export default function QuizTest() {
       )}
     </div>
   );
-};
+}
+}
