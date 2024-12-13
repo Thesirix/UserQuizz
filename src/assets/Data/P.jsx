@@ -13,6 +13,7 @@ const quiz = {
           'Ajuster un modèle à des données étiquetées'
         ],
         correctAnswer: 'Découvrir des motifs cachés dans les données',
+        diff:5
       },
       {
         question: 'Quelle est la principale différence entre l\'apprentissage supervisé et l\'apprentissage par renforcement ?',
