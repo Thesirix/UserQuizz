@@ -1,84 +1,88 @@
-# Application de Test pour Étudiants
+# 📝 UserQuizz
 
-![Aperçu de l'application](./smcq.gif)
+# Student Testing Application
 
-## Description
+![App Preview](./smcq.gif)
 
-Cette application web permet de gérer des tests de connaissance pour les étudiants. Elle est développée en utilisant **React** pour le front-end et **Node.js** avec **Express** pour le back-end. 
+## 📖 Description
 
-### Fonctionnalités
+This web application manages knowledge tests for students. It is developed using **React** for the front-end and **Node.js** with **Express** for the back-end.
 
-- **Espace Administrateur** :
-  - Création et gestion de questions pour les tests.
-  - Génération et gestion des comptes étudiants.
-  - Visualisation des résultats des tests.
+### ✨ Features
 
-- **Espace Candidat** :
-  - Test de connaissances via un questionnaire à choix multiples (QCM).
-  - Chronomètre intégré pour chaque session de test.
-  - Affichage des résultats après le test.
+- **👨‍🏫 Admin Portal:**
 
-- **Tableau de Bord** :
-  - Suivi des performances des étudiants.
-  - Statistiques sur les tests passés.
+  - Create and manage test questions.
+  - Generate and manage student accounts.
+  - View test results.
 
-## Installation
+- **🎓 Candidate Area:**
 
-1. **Cloner le dépôt :**
+  - Knowledge testing via Multiple Choice Questions (MCQ).
+  - Integrated timer for each test session.
+  - Result display after the test.
+
+- **📊 Dashboard:**
+  - Track student performance.
+  - Statistics on past tests.
+
+## 🚀 Installation
+
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-repo.git
-   cd votre-repo
+   git clone [https://github.com/your-username/your-repo.git](https://github.com/your-username/your-repo.git)
+   cd your-repo
    ```
 
-2. **Installation des dépendances :**
+2. **Install dependencies:**
 
-   - Pour le backend :
+   - For the backend:
 
      ```bash
      cd backend
      npm install
      ```
 
-   - Pour le frontend :
+   - For the frontend:
 
      ```bash
      cd frontend
      npm install
      ```
 
-3. **Configuration de l'environnement :**
+3. **Environment Configuration:**
 
-   Créez un fichier `.env` dans le répertoire `backend` avec les variables d'environnement nécessaires :
+   Create a `.env` file in the `backend` directory with the necessary environment variables:
 
    ```env
    PORT=5000
-   DATABASE_URL=votre_url_de_base_de_données
-   JWT_SECRET=votre_secret_jwt
+   DATABASE_URL=your_database_url
+   JWT_SECRET=your_jwt_secret
    ```
 
-4. **Lancer l'application :**
+4. **Start the application:**
 
-   - Backend :
+   - Backend:
 
      ```bash
      cd backend
      npm start
      ```
 
-   - Frontend :
+   - Frontend:
 
      ```bash
      cd frontend
      npm start
      ```
 
-## Utilisation
+## 💡 Usage
 
-- **Accès Administrateur** : Se connecter avec un compte administrateur pour créer des questions et gérer les étudiants.
-- **Accès Candidat** : Se connecter avec un compte étudiant pour accéder aux tests chronométrés.
+- **Admin Access:** Log in with an administrator account to create questions and manage students.
+- **Candidate Access:** Log in with a student account to access timed tests.
 
-## Structure du Projet
+## 📂 Project Structure
 
 ```plaintext
 ├── backend
@@ -101,16 +105,12 @@ Cette application web permet de gérer des tests de connaissance pour les étudi
 └── README.md
 ```
 
-## Technologies Utilisées
+## 🛠️ Technologies Used
 
-- **Frontend** : React, React Router, Axios
-- **Backend** : Node.js, Express, MongoDB
-- **Autres** : JWT pour l'authentification, Bcrypt pour le hachage des mots de passe
+- **Frontend:** React, React Router, Axios
+- **Backend:** Node.js, Express, MongoDB
+- **Others:** JWT for authentication, Bcrypt for password hashing
 
-## Contribution
+## ❤️ Contribution
 
-Les contributions sont les bienvenues ! Merci de soumettre une *pull request* pour toute amélioration ou correction.
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](./LICENSE) pour plus de détails.
+Contributions are welcome! Please submit a _pull request_ for any improvements or corrections.
