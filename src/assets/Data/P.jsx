@@ -262,7 +262,7 @@ const quiz = {
 },
 
 {
-    question: 'Quel est l\'effet de la \"malédiction de la dimensionalité\" sur les performances des algorithmes d\'apprentissage automatique, et comment les chercheurs tentent-ils de la surmonter ?',
+    question: 'Quel est l\'effet de la "malédiction de la dimensionalité" sur les performances des algorithmes d\'apprentissage automatique, et comment les chercheurs tentent-ils de la surmonter ?',
     choices: ['Elle entraîne une augmentation de la complexité des modèles, nécessitant des ensembles de données plus volumineux pour l\'apprentissage, et est contournée par l\'utilisation de techniques d\'échantillonnage adaptatif', 'Elle diminue la précision des modèles en raison de la surcharge d\'informations, et est contournée par l\'utilisation de techniques de réduction de dimensionnalité', 'Elle induit des biais dans les prédictions des modèles en raison de la dispersion des données, et est contournée par l\'utilisation de techniques d\'équilibrage de classe', 'Elle limite la capacité des modèles à généraliser à partir de données d\'entraînement, et est contournée par l\'utilisation de techniques de régularisation avancées'],
     correctAnswer: 'Elle diminue la précision des modèles en raison de la surcharge d\'informations, et est contournée par l\'utilisation de techniques de réduction de dimensionnalité'
   },    

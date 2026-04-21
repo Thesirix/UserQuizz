@@ -4,11 +4,11 @@ import '../assets/style.css'
 function Login() {
   return (
     <div className="main">
-      <input type="checkbox" id="chk" aria-hidden="true" />
+      <input type="checkbox" id="chk" />
 
       <div className="signup">
         <form>
-          <label htmlFor="chk" aria-hidden="true">Sign up</label>
+          <label htmlFor="chk">Sign up</label>
           <input type="text" name="txt" placeholder="User name" required="" />
           <input type="email" name="email" placeholder="Email" required="" />
           <input type="password" name="pswd" placeholder="Password" required="" />
@@ -18,7 +18,7 @@ function Login() {
 
       <div className="login">
         <form>
-          <label htmlFor="chk" aria-hidden="true">Login</label>
+          <label htmlFor="chk">Login</label>
           <input type="email" name="email" placeholder="Email" required="" />
           <input type="password" name="pswd" placeholder="Password" required="" />
           <button>Login</button>
