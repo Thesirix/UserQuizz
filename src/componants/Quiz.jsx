@@ -99,14 +99,13 @@ const Quiz = () => {
       
               <ul>
                 {choices.map((answer, index) => (
-                  <li
-                    onClick={() => onAnswerSelected(answer, index)}
-                    onKeyDown={(e) => e.key === 'Enter' && onAnswerSelected(answer, index)}
-                    key={answer}
-                    role="button"
-                    tabIndex={0}
-                    className={selectedAnswerIndex === index ? 'selected-answer' : null}>
-                    {answer}
+                  <li key={answer}>
+                    <button
+                      type="button"
+                      onClick={() => onAnswerSelected(answer, index)}
+                      className={selectedAnswerIndex === index ? 'selected-answer' : undefined}>
+                      {answer}
+                    </button>
                   </li>
                 ))}
               </ul>
